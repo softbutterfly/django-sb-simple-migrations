@@ -11,54 +11,49 @@
 [![codecov](https://codecov.io/gh/softbutterfly/django-sb-simple-migrations/branch/master/graph/badge.svg?token=pbqXUUOu1F)](https://codecov.io/gh/softbutterfly/django-sb-simple-migrations)
 [![Requirements Status](https://requires.io/github/softbutterfly/django-sb-simple-migrations/requirements.svg?branch=master)](https://requires.io/github/softbutterfly/django-sb-simple-migrations/requirements/?branch=master)
 
-# Culqi API Python
+# Django Simple Migrations
 
-Biblioteca de CULQI para el lenguaje Python, pagos simples en tu sitio web.
+Django migrations without unnecesary change alert triggers.
 
-## Requisitos
+This project was originally taken from [Pretix source code](https://github.com/pretix/pretix/tree/master/src/pretix/base/management/commands) and battle testet across many projects on [SoftButterfly](https://softbutterfly.io).
+
+This package overrides the commands `makemigrations` and `migrate`, mainly to make that `makemigrations` doesn't create migrations on non-significant database model fields and avoid `migrate` warnings. As is stated in the source code
+
+* `makemigrations`
+
+  > Django, for theoretically very valid reasons, creates migrations for *every single thing* we change on a model. Even the `help_text`! This makes sense, as we don't know if any database backend unknown to us might actually use this information for its database schema.
+  >
+  > However, many projects only supports PostgreSQL, MySQL, MariaDB and SQLite and we can be pretty certain that some changes to models will never require a change to the database. In this case, not creating a migration for certain changes will save us some performance while applying them *and* allow for a cleaner git history. Win-win!
+  >
+  > Only caveat is that we need to do some dirty monkeypatching to achieve it...
+
+* `migrate`
+
+  > Django tries to be helpful by suggesting to run "makemigrations" in red font on every "migrate" run when there are things we have no migrations for. Usually, this is intended, and running "makemigrations" can really screw up the environment of a user, so we want to prevent novice users from doing that by going really dirty and filtering it from the output.
+
+## Requirements
 
 - Python 3.6, 3.7, 3.8, 3.9
-- Credenciales de comercio en [Culqi](https://culqi.com).
 
-## Instalación
+## Install
 
 ```bash
 pip install django-sb-simple-migrations
 ```
 
-![Sample](https://raw.githubusercontent.com/softbutterfly/django-sb-simple-migrations/master/resources/carbon.png)
+## Docs
 
-Cada metodo retona un diccionario con la estructura
-
-```python
-{
-      "status": status_code,
-      "data": data
-}
-```
-
-El `status_code` es el estatus HTTP numérico devuelto por la solicitud HTTP que se
-realiza al API de Culqi, y `data` contiene el cuerpo de la respuesta obtenida.
-
-## Documentación
-
-- [Referencia de API](https://www.culqi.com/api/)
 - [Ejemplos](https://github.com/softbutterfly/django-sb-simple-migrations/wiki)
 - [Wiki](https://github.com/softbutterfly/django-sb-simple-migrations/wiki)
 
 ## Changelog
 
-Todos los cambios en las versiones de esta biblioteca están listados en
-el [historial de cambios](CHANGELOG.md).
+All changes to versions of this library are listed in the [change history](CHANGELOG.md).
 
-## Desarrollo
+## Development
 
-Revisa nuestra [guia de contribución](CONTRIBUTING.md)
+Check out our [contribution guide](CONTRIBUTING.md).
 
-## Contribuidores
+## Contributors
 
-Mira la lista de contribuidores [aquí](https://github.com/softbutterfly/django-sb-simple-migrations/graphs/contributors).
-
-## Historia...
-
-La libreria de Culqi para Python inicio su desarrollo en enero del 2017, d ela mano de [@william-muro-culqi](https://github.com/william-muro-culqi) y [@marti1125](https://github.com/marti1125), posteriorme [@brayancruces](https://github.com/brayancruces), [@KhanMaytok](https://github.com/KhanMaytok) y [@oskargicast](https://github.com/oskargicast) complementaron el trabajo incial y mantiuvieron la libreria estable hasta mediados de 2019. En enero del 2020 [@zodiacfireworks](https://github.com/zodiacfireworks) hace una refactorizacion completa de la libreria, estos cambios son aprobados y mejorados por [@joelibaceta](https://github.com/joelibaceta). Con estos cambios se publicaron las versiones 1.0.0, 1.0.1, 1.0.2 y 1.0.3 de la libreria. [@zodiacfireworks](https://github.com/zodiacfireworks) envió más cambios para corregir algunos errores de empaquetamiento, lamentablemente, tras mas de un año de haber sido enviados, no se publicaron a traves del canal oficial, por este motivo es que en [@SoftButterfly](https://github.com/softbutterfly) hemos tomado la iniciativa publicar esta libreria, compatible con la original, con los cambios que no llegaron a publicarse y otras mejoras que se pueden ver en el [historial de cambios](https://github.com/softbutterfly/django-sb-simple-migrations/blob/master/CHANGELOG.md). Con el fin de respetar el trabajo de quienes participaron del desarrollo de esta libreria en el repositorio focial de Culqi, el historial original de contribuciones se ha mantenido en este repositorio.
+See the list of contributors [here](https://github.com/softbutterfly/django-sb-simple-migrations/graphs/contributors).
