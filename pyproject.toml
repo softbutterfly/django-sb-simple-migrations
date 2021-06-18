@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django-sb-simple-migraitons"
+name = "django-sb-simple-migrations"
 version = "0.1.0"
 description = "Django migrations without unnecesary change alert triggers."
 authors = [
@@ -8,9 +8,9 @@ authors = [
 ]
 license = "MIT License"
 readme = "README.md"
-homepage = "https://github.com/softbutterfly/django-sb-simple-migraitons"
-repository = "https://github.com/softbutterfly/django-sb-simple-migraitons"
-documentation = "https://github.com/softbutterfly/django-sb-simple-migraitons/wiki"
+homepage = "https://github.com/softbutterfly/django-sb-simple-migrations"
+repository = "https://github.com/softbutterfly/django-sb-simple-migrations"
+documentation = "https://github.com/softbutterfly/django-sb-simple-migrations/wiki"
 keywords = ["Softbutterfly", "Django", "Migrations"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
@@ -32,13 +32,13 @@ include = [
 ]
 
 [tool.poetry.urls]
-"Download" = "https://github.com/softbutterfly/django-sb-simple-migraitons/archive/1.0.1.tar.gz"
-"Bug Tracker" = "https://github.com/softbutterfly/django-sb-simple-migraitons/issues"
+"Download" = "https://github.com/softbutterfly/django-sb-simple-migrations/archive/1.0.1.tar.gz"
+"Bug Tracker" = "https://github.com/softbutterfly/django-sb-simple-migrations/issues"
 
 
 [tool.poetry.dependencies]
 python = ">= 3.6.2, < 4.0.0"
-Django = "<=4.0.0"
+Django = "< 4.0.0"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "^1.5.7"
