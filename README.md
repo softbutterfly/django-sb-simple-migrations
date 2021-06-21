@@ -41,6 +41,18 @@ This package overrides the commands `makemigrations` and `migrate`, mainly to ma
 pip install django-sb-simple-migrations
 ```
 
+## Usage
+
+Just add `django_sb_simple_migrations` to your `INSTALLED_APPS` settings
+
+```
+INSTALLED_APPS = [
+  # ...
+  "django_sb_simple_migrations",
+  # ...
+]
+```
+
 ## Docs
 
 - [Ejemplos](https://github.com/softbutterfly/django-sb-simple-migrations/wiki)
