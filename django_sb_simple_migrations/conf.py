@@ -6,7 +6,6 @@ from django.db import models
 
 class AppSettings:
     prefix = "SIMPLE_MIGRATIONS"
-
     defaults = {
         "IGNORED_ATTRS": [
             # (
@@ -52,6 +51,7 @@ class AppSettings:
             ),
         ]
     }
+    required_settings = []
 
     def __init__(self, base_settings):
         self.base_settings = base_settings
