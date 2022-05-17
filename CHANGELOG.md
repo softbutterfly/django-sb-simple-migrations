@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Drop support for python 3.6
+- Drop support for python 3.7
+- Add support for python 3.10
+- Add support for Django 4
+
 ## [0.5.0] - 2021-07-24
 
 - Fix casting error in `__version__` construction.

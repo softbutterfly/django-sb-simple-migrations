@@ -33,7 +33,7 @@ This package overrides the commands `makemigrations` and `migrate`, mainly to ma
 
 ## Requirements
 
-- Python 3.6, 3.7, 3.8, 3.9
+- Python 3.8, 3.9, 3.10
 
 ## Install
 
