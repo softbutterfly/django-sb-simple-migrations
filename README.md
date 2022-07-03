@@ -1,4 +1,4 @@
-![Community project](https://raw.githubusercontent.com/softbutterfly/django-sb-simple-migrations/master/resources/softbutterfly-open-source-community-project.png)
+![Community-Project](https://gitlab.com/softbutterfly/open-source/open-source-office/-/raw/master/banners/softbutterfly-open-source--banner--community-project.png)
 
 ![PyPI - Supported versions](https://img.shields.io/pypi/pyversions/django-sb-simple-migrations)
 ![PyPI - Package version](https://img.shields.io/pypi/v/django-sb-simple-migrations)
