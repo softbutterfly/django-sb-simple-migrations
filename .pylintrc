@@ -1,9 +1,9 @@
 [MASTER]
 load-plugins=pylint.extensions.docparams, pylint.extensions.docstyle, pylint.extensions.bad_builtin, pylint.extensions.mccabe, pylint_django
-profile=no
+# profile=no
 persistent=yes
-ignore=tests.py, urls.py, migrations, example
-cache-size=500
+ignore=tests.py,urls.py,migrations
+# cache-size=500
 
 [MESSAGES CONTROL]
 # C0111 Missing docstring
@@ -19,11 +19,12 @@ cache-size=500
 # C1001 Used when a class is defined that does not inherit from anotherclass and does not inherit explicitly from “object”.
 # C0103 Invalid module name
 # R0901 Used when class has too many parent classes, try to reduce this to get a simpler (and so easier to use) class.
-disable=C0111,I0011,I0012,W0704,W0142,W0212,W0232,W0613,W0702,R0201,C1001,C0103,R0901
+# disable=C0111,I0011,I0012,W0704,W0142,W0212,W0232,W0613,W0702,R0201,C1001,C0103,R0901
+disable=missing-module-docstring,missing-class-docstring,missing-function-docstring
 
 [REPORTS]
 msg-template={path}:{line}: [{msg_id}({symbol}), {obj}] {msg}
-include-ids=yes
+# include-ids=yes
 
 [BASIC]
 no-docstring-rgx=__.*__|_.*
@@ -44,7 +45,7 @@ ignored-classes=SQLObject,WSGIRequest
 
 # When zope mode is activated, add a predefined set of Zope acquired attributes
 # to generated-members.
-zope=no
+# zope=no
 
 # List of members which are set dynamically and missed by pylint inference
 # system, and so shouldn't trigger E0201 when accessed.
@@ -68,16 +69,16 @@ notes=FIXME,XXX,TODO
 
 [FORMAT]
 max-line-length=160
-max-module-lines=500
+max-module-lines=600
 indent-string='    '
 
 [DESIGN]
 max-args=10
 max-locals=15
 max-returns=6
-max-branches=12
+max-branches=10
 max-statements=50
-max-parents=7
+max-parents=25
 max-attributes=7
 min-public-methods=0
 max-public-methods=50

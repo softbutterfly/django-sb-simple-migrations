@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-sb-simple-migrations"
-version = "0.6.0"
+version = "0.7.0"
 description = "Django migrations without unnecesary change alert triggers."
 authors = [
   "SoftButterfly Development Team <dev@softbutterfly.io>",
@@ -8,23 +8,23 @@ authors = [
 ]
 license = "MIT License"
 readme = "README.md"
-homepage = "https://github.com/softbutterfly/django-sb-simple-migrations"
-repository = "https://github.com/softbutterfly/django-sb-simple-migrations"
-documentation = "https://github.com/softbutterfly/django-sb-simple-migrations/wiki"
+homepage = "https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations"
+repository = "https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations"
+documentation = "https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/-/wikis"
 keywords = ["Softbutterfly", "Django", "Migrations"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
   "Natural Language :: English",
-  "Programming Language :: Python :: 3.6",
-  "Programming Language :: Python :: 3.7",
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 packages = [
-    { include = "django_sb_simple_migrations" }
+    { include = "django_sb_simple_migrations", from = "src" }
 ]
 include = [
   "LICENSE.txt",
@@ -32,7 +32,7 @@ include = [
 ]
 
 [tool.poetry.urls]
-"Download" = "https://github.com/softbutterfly/django-sb-simple-migrations/archive/v0.6.0.tar.gz"
+"Download" = "https://github.com/softbutterfly/django-sb-simple-migrations/archive/v0.7.0.tar.gz"
 "Bug Tracker" = "https://github.com/softbutterfly/django-sb-simple-migrations/issues"
 
 
@@ -85,5 +85,5 @@ exclude = '''
 '''
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
