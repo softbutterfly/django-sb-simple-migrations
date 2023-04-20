@@ -57,15 +57,15 @@ class AppSettings:
         self.base_settings = base_settings
 
         for setting in self.required_settings:
-            prefixed_name = "%s_%s" % (self.prefix, setting)
+            prefixed_name = f"{self.prefix}_{setting}"
 
             if not hasattr(self.base_settings, prefixed_name):
                 raise ImproperlyConfigured(
-                    "The '%s' setting is required." % prefixed_name
+                    f"The '{prefixed_name}' setting is required."
                 )
 
     def __getattr__(self, name):
-        prefixed_name = "%s_%s" % (self.prefix, name)
+        prefixed_name = f"{self.prefix}_{name}"
 
         if hasattr(self.base_settings, prefixed_name):
             return getattr(self.base_settings, prefixed_name)
@@ -73,9 +73,7 @@ class AppSettings:
         if name in self.defaults:
             return self.defaults[name]
 
-        raise AttributeError(
-            "'AppSettings' object does not have a '%s' attribute" % name
-        )
+        raise AttributeError(f"'AppSettings' object does not have a '{name}' attribute")
 
 
 settings = AppSettings(django_settings)
