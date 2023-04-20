@@ -1,7 +1,7 @@
 github_url = "https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations"
 
 [version]
-current = "0.6.0"
+current = "0.7.0"
 
 # Example of a semver regexp.
 # Make sure this matches current_version before
