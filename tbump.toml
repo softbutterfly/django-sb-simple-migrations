@@ -1,4 +1,3 @@
-# Uncomment this if your project is hosted on GitHub:
 github_url = "https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations"
 
 [version]
@@ -30,15 +29,15 @@ search = 'version = "{current_version}"'
 
 [[file]]
 src = 'pyproject.toml'
-search = 'v{current_version}.tar.gz'
+search = 'v{current_version}'
 
 [[before_commit]]
-name = "Update change log"
+name = "Update changelog"
 cmd = "sed -z \"s/## \\[Unreleased\\]/## [Unreleased]\\n\\n## [{new_version}] - $(date '+%Y-%m-%d')/g\" -i CHANGELOG.md"
 
 [[before_commit]]
-name = "Update update version.py"
-cmd = "echo $(echo \"{new_version}\" | sed -r 's/([0-9]+)\\.([0-9]+)\\.([0-9]+)/VERSION = (\\1, \\2, \\3)/g') > django_sb_simple_migrations/version.py"
+name = "Update version.py"
+cmd = "echo $(echo \"{new_version}\" | sed -r 's/([0-9]+)\\.([0-9]+)\\.([0-9]+)/VERSION = (\\1, \\2, \\3)/g') > src/django_sb_simple_migrations/version.py"
 
 [[after_push]]
 name = "Build package"

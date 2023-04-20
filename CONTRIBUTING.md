@@ -7,8 +7,8 @@
 Clone the project
 
 ```bash
-$ git clone https://gitlab.com/softbutterfly/open-source/wagtail-sb-admin-interface.git
-$ cd wagtail-sb-admin-interface
+$ git clone https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations.git
+$ cd django-sb-simple-migrations
 ```
 
 Install the dependencies

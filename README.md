@@ -5,11 +5,7 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/django-sb-simple-migrations)
 ![PyPI - MIT License](https://img.shields.io/pypi/l/django-sb-simple-migrations)
 
-[![Build Status](https://www.travis-ci.org/softbutterfly/django-sb-simple-migrations.svg?branch=develop)](https://www.travis-ci.org/softbutterfly/django-sb-simple-migrations)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9ed3b8725e094a648b38b96a3acdc1eb)](https://www.codacy.com/gh/softbutterfly/django-sb-simple-migrations/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=softbutterfly/django-sb-simple-migrations&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/9ed3b8725e094a648b38b96a3acdc1eb)](https://www.codacy.com/gh/softbutterfly/django-sb-simple-migrations/dashboard?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/django-sb-simple-migrations&utm_campaign=Badge_Coverage)
-[![codecov](https://codecov.io/gh/softbutterfly/django-sb-simple-migrations/branch/master/graph/badge.svg?token=pbqXUUOu1F)](https://codecov.io/gh/softbutterfly/django-sb-simple-migrations)
-[![Requirements Status](https://requires.io/github/softbutterfly/django-sb-simple-migrations/requirements.svg?branch=master)](https://requires.io/github/softbutterfly/django-sb-simple-migrations/requirements/?branch=master)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cbdc556a2ca246d2b906dfc5e1195541)](https://app.codacy.com/gl/softbutterfly/django-sb-simple-migrations/dashboard?utm_source=gl&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 # Django Simple Migrations
 
@@ -55,8 +51,8 @@ INSTALLED_APPS = [
 
 ## Docs
 
-- [Ejemplos](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/wiki)
-- [Wiki](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/wiki)
+- [Ejemplos](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/-/wikis)
+- [Wiki](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/-/wikis)
 
 ## Changelog
 
@@ -68,4 +64,4 @@ Check out our [contribution guide](CONTRIBUTING.md).
 
 ## Contributors
 
-See the list of contributors [here](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/graphs/contributors).
+See the list of contributors [here](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/-/graphs/develop).
