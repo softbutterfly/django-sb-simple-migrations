@@ -24,7 +24,7 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 packages = [
-    { include = "django_sb_simple_migrations, from = "src" }
+    { include = "django_sb_simple_migrations", from = "src" }
 ]
 include = [
   "LICENSE.txt",
