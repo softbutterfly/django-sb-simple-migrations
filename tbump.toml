@@ -1,5 +1,5 @@
 # Uncomment this if your project is hosted on GitHub:
-github_url = "https://github.com/softbutterfly/django-sb-simple-migrations"
+github_url = "https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations"
 
 [version]
 current = "0.6.0"

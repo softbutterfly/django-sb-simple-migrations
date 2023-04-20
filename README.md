@@ -55,8 +55,8 @@ INSTALLED_APPS = [
 
 ## Docs
 
-- [Ejemplos](https://github.com/softbutterfly/django-sb-simple-migrations/wiki)
-- [Wiki](https://github.com/softbutterfly/django-sb-simple-migrations/wiki)
+- [Ejemplos](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/wiki)
+- [Wiki](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/wiki)
 
 ## Changelog
 
@@ -68,4 +68,4 @@ Check out our [contribution guide](CONTRIBUTING.md).
 
 ## Contributors
 
-See the list of contributors [here](https://github.com/softbutterfly/django-sb-simple-migrations/graphs/contributors).
+See the list of contributors [here](https://gitlab.com/softbutterfly/open-source/django-sb-simple-migrations/graphs/contributors).
