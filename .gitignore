@@ -11,6 +11,8 @@
 !.python-version
 !.remarkrc
 !.tox.ini
+!.travis.yml
+!.gitlab-ci.yml
 *.out
 *.egg*
 *.env
@@ -19,6 +21,7 @@
 *.py[cod]
 *.sqlite3
 coverage.*
+cobertura.xml
 old.*
 staticfiles_*.json
 staticfiles.json
@@ -29,3 +32,5 @@ dist
 frontend
 legacy
 public
+demoproject/media
+demoproject/static
