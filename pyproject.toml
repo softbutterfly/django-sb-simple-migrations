@@ -22,6 +22,12 @@ classifiers = [
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Topic :: Software Development :: Libraries :: Python Modules",
+  "Framework :: Django :: 2",
+  "Framework :: Django :: 3",
+  "Framework :: Django :: 4",
+  "Framework :: Wagtail :: 3",
+  "Framework :: Wagtail :: 4",
+  "Framework :: Wagtail :: 5",
 ]
 packages = [
     { include = "django_sb_simple_migrations", from = "src" }
@@ -82,6 +88,21 @@ exclude = '''
   |example
 )/
 '''
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "demoproject.settings"
+pythonpath = "demoproject"
+testpaths = "tests"
+python_files = [
+  "**/test_*.py",
+]
+filterwarnings =[
+  "ignore::DeprecationWarning",
+  "ignore::PendingDeprecationWarning"
+]
+addopts = [
+  "--import-mode=importlib",
+]
 
 [build-system]
 requires = ["poetry-core"]
