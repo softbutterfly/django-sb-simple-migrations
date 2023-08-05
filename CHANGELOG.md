@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2023-08-05
+
+* Update dependencies
+* Drop support for python 3.8.0
+* Add base clases for testing
+* Add CI/CD
+
 ## [0.7.0] - 2023-04-20
 
 - Drop support for python 3.8.0

@@ -5,12 +5,15 @@
 !.editorconfig
 !.env.template
 !.gitignore
+!.gitlab-ci.yml
 !.isort.cfg
 !.pre-commit-config.yaml
 !.pylintrc*
 !.python-version
 !.remarkrc
+!.shellcheckrc
 !.tox.ini
+!.travis.yml
 *.out
 *.egg*
 *.env
@@ -19,6 +22,7 @@
 *.py[cod]
 *.sqlite3
 coverage.*
+cobertura.xml
 old.*
 staticfiles_*.json
 staticfiles.json
@@ -29,3 +33,5 @@ dist
 frontend
 legacy
 public
+demoproject/media
+demoproject/static
