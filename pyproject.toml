@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-sb-simple-migrations"
-version = "0.7.0"
+version = "0.8.0"
 description = "Django migrations without unnecesary change alert triggers."
 authors = [
   "SoftButterfly Development Team <dev@softbutterfly.io>",
@@ -38,7 +38,7 @@ include = [
 ]
 
 [tool.poetry.urls]
-"Download" = "https://github.com/softbutterfly/django-sb-simple-migrations/archive/v0.7.0.tar.gz"
+"Download" = "https://github.com/softbutterfly/django-sb-simple-migrations/archive/v0.8.0.tar.gz"
 "Bug Tracker" = "https://github.com/softbutterfly/django-sb-simple-migrations/issues"
 
 
