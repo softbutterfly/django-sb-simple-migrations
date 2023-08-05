@@ -5,14 +5,15 @@
 !.editorconfig
 !.env.template
 !.gitignore
+!.gitlab-ci.yml
 !.isort.cfg
 !.pre-commit-config.yaml
 !.pylintrc*
 !.python-version
 !.remarkrc
+!.shellcheckrc
 !.tox.ini
 !.travis.yml
-!.gitlab-ci.yml
 *.out
 *.egg*
 *.env
