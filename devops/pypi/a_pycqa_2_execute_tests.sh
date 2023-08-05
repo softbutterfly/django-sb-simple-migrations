@@ -10,5 +10,5 @@ if [ -n "$TOX_ENVS" ]; then
     poetry run tox -e "$TOX_ENVS"
 else
     echo "* Pytest execution with Poetry"
-    poetry run pytest --cov=wagtail_sb_imageserializer --cov-report xml:cobertura.xml --cov-report term
+    poetry run pytest --cov="$PACKAGE_NAME" --cov-report xml:cobertura.xml --cov-report term
 fi
