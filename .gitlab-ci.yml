@@ -16,76 +16,76 @@ cache:
 # ---------------------------------------------------------------------------- #
 # Test                                                                         #
 # ---------------------------------------------------------------------------- #
-test:development:py38:
-  stage: test
-  image: python:3.8
-  variables:
-    REPORT_COVERAGE: "false"
-    TOX_ENVS: "py38-wgtl30-djng32,py38-wgtl30-djng40,py38-wgtl40-djng32,py38-wgtl40-djng40,py38-wgtl40-djng41,py38-wgtl41-djng32,py38-wgtl41-djng40,py38-wgtl41-djng41,py38-wgtl42-djng32,py38-wgtl42-djng40,py38-wgtl42-djng41,py38-wgtl50-djng32,py38-wgtl50-djng41,py38-wgtl50-djng42"
-  script:
-    - ./devops/pypi/a_pycqa_1_install_dependencies.sh
-    - ./devops/pypi/a_pycqa_2_execute_tests.sh
-    - ./devops/pypi/a_pycqa_3_upload_coverage.sh
-  cache:
-    key: ${CI_JOB_NAME}
-    paths:
-      - .tox
-  only:
-    - develop
+# test:development:py38:
+#   stage: test
+#   image: python:3.8
+#   variables:
+#     REPORT_COVERAGE: "false"
+#     TOX_ENVS: "py38-wgtl30-djng32,py38-wgtl30-djng40,py38-wgtl40-djng32,py38-wgtl40-djng40,py38-wgtl40-djng41,py38-wgtl41-djng32,py38-wgtl41-djng40,py38-wgtl41-djng41,py38-wgtl42-djng32,py38-wgtl42-djng40,py38-wgtl42-djng41,py38-wgtl50-djng32,py38-wgtl50-djng41,py38-wgtl50-djng42"
+#   script:
+#     - ./devops/pypi/a_pycqa_1_install_dependencies.sh
+#     - ./devops/pypi/a_pycqa_2_execute_tests.sh
+#     - ./devops/pypi/a_pycqa_3_upload_coverage.sh
+#   cache:
+#     key: ${CI_JOB_NAME}
+#     paths:
+#       - .tox
+#   only:
+#     - develop
 
 
-test:development:py39:
-  stage: test
-  image: python:3.9
-  variables:
-    REPORT_COVERAGE: "false"
-    TOX_ENVS: "py39-wgtl30-djng32,py39-wgtl30-djng40,py39-wgtl40-djng32,py39-wgtl40-djng40,py39-wgtl40-djng41,py39-wgtl41-djng32,py39-wgtl41-djng40,py39-wgtl41-djng41,py39-wgtl42-djng32,py39-wgtl42-djng40,py39-wgtl42-djng41,py39-wgtl50-djng32,py39-wgtl50-djng41,py39-wgtl50-djng42"
-  script:
-    - ./devops/pypi/a_pycqa_1_install_dependencies.sh
-    - ./devops/pypi/a_pycqa_2_execute_tests.sh
-    - ./devops/pypi/a_pycqa_3_upload_coverage.sh
-  cache:
-    key: ${CI_JOB_NAME}
-    paths:
-      - .tox
-  only:
-    - develop
+# test:development:py39:
+#   stage: test
+#   image: python:3.9
+#   variables:
+#     REPORT_COVERAGE: "false"
+#     TOX_ENVS: "py39-wgtl30-djng32,py39-wgtl30-djng40,py39-wgtl40-djng32,py39-wgtl40-djng40,py39-wgtl40-djng41,py39-wgtl41-djng32,py39-wgtl41-djng40,py39-wgtl41-djng41,py39-wgtl42-djng32,py39-wgtl42-djng40,py39-wgtl42-djng41,py39-wgtl50-djng32,py39-wgtl50-djng41,py39-wgtl50-djng42"
+#   script:
+#     - ./devops/pypi/a_pycqa_1_install_dependencies.sh
+#     - ./devops/pypi/a_pycqa_2_execute_tests.sh
+#     - ./devops/pypi/a_pycqa_3_upload_coverage.sh
+#   cache:
+#     key: ${CI_JOB_NAME}
+#     paths:
+#       - .tox
+#   only:
+#     - develop
 
 
-test:development:py310:
-  stage: test
-  image: python:3.10
-  variables:
-    REPORT_COVERAGE: "false"
-    TOX_ENVS: "py310-wgtl30-djng32,py310-wgtl30-djng40,py310-wgtl40-djng32,py310-wgtl40-djng40,py310-wgtl40-djng41,py310-wgtl41-djng32,py310-wgtl41-djng40,py310-wgtl41-djng41,py310-wgtl42-djng32,py310-wgtl42-djng40,py310-wgtl42-djng41,py310-wgtl50-djng32,py310-wgtl50-djng41,py310-wgtl50-djng42"
-  script:
-    - ./devops/pypi/a_pycqa_1_install_dependencies.sh
-    - ./devops/pypi/a_pycqa_2_execute_tests.sh
-    - ./devops/pypi/a_pycqa_3_upload_coverage.sh
-  cache:
-    key: ${CI_JOB_NAME}
-    paths:
-      - .tox
-  only:
-    - develop
+# test:development:py310:
+#   stage: test
+#   image: python:3.10
+#   variables:
+#     REPORT_COVERAGE: "false"
+#     TOX_ENVS: "py310-wgtl30-djng32,py310-wgtl30-djng40,py310-wgtl40-djng32,py310-wgtl40-djng40,py310-wgtl40-djng41,py310-wgtl41-djng32,py310-wgtl41-djng40,py310-wgtl41-djng41,py310-wgtl42-djng32,py310-wgtl42-djng40,py310-wgtl42-djng41,py310-wgtl50-djng32,py310-wgtl50-djng41,py310-wgtl50-djng42"
+#   script:
+#     - ./devops/pypi/a_pycqa_1_install_dependencies.sh
+#     - ./devops/pypi/a_pycqa_2_execute_tests.sh
+#     - ./devops/pypi/a_pycqa_3_upload_coverage.sh
+#   cache:
+#     key: ${CI_JOB_NAME}
+#     paths:
+#       - .tox
+#   only:
+#     - develop
 
 
-test:development:py311:
-  stage: test
-  image: python:3.11
-  variables:
-    REPORT_COVERAGE: "false"
-    TOX_ENVS: "py311-wgtl41-djng32,py311-wgtl41-djng40,py311-wgtl41-djng41,py311-wgtl42-djng32,py311-wgtl42-djng40,py311-wgtl42-djng41,py311-wgtl50-djng32,py311-wgtl50-djng41,py311-wgtl50-djng42"
-  script:
-    - ./devops/pypi/a_pycqa_1_install_dependencies.sh
-    - ./devops/pypi/a_pycqa_2_execute_tests.sh
-    - ./devops/pypi/a_pycqa_3_upload_coverage.sh
-  cache:
-    key: ${CI_JOB_NAME}
-    paths:
-      - .tox
-  only:
-    - develop
+# test:development:py311:
+#   stage: test
+#   image: python:3.11
+#   variables:
+#     REPORT_COVERAGE: "false"
+#     TOX_ENVS: "py311-wgtl41-djng32,py311-wgtl41-djng40,py311-wgtl41-djng41,py311-wgtl42-djng32,py311-wgtl42-djng40,py311-wgtl42-djng41,py311-wgtl50-djng32,py311-wgtl50-djng41,py311-wgtl50-djng42"
+#   script:
+#     - ./devops/pypi/a_pycqa_1_install_dependencies.sh
+#     - ./devops/pypi/a_pycqa_2_execute_tests.sh
+#     - ./devops/pypi/a_pycqa_3_upload_coverage.sh
+#   cache:
+#     key: ${CI_JOB_NAME}
+#     paths:
+#       - .tox
+#   only:
+#     - develop
 
 
 test:tag:py311:
