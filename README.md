@@ -6,6 +6,7 @@
 ![PyPI - MIT License](https://img.shields.io/pypi/l/django-sb-simple-migrations)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/cbdc556a2ca246d2b906dfc5e1195541)](https://app.codacy.com/gl/softbutterfly/django-sb-simple-migrations/dashboard?utm_source=gl&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/cbdc556a2ca246d2b906dfc5e1195541)](https://app.codacy.com/gl/softbutterfly/django-sb-simple-migrations/dashboard?utm_source=gl&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
 
 # Django Simple Migrations
 
