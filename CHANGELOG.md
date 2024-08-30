@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Update dependencies
+- Drop support for python version lower than 3.9.0
+- Drop official support for Django version lower than 4.1.x
+- Add support for Django 5.x.y
+
 ## [0.8.0] 2023-08-06
 
 - Update dependencies
