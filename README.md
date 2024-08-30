@@ -1,4 +1,6 @@
-![Community-Project](https://gitlab.com/softbutterfly/open-source/open-source-office/-/raw/master/banners/softbutterfly-open-source--banner--community-project.png)
+![Community-Project](https://gitlab.com/softbutterfly/open-source/open-source-office/-/raw/master/assets/dynova/dynova-open-source--banner--community-project.png)
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 ![PyPI - Supported versions](https://img.shields.io/pypi/pyversions/django-sb-simple-migrations)
 ![PyPI - Package version](https://img.shields.io/pypi/v/django-sb-simple-migrations)
@@ -30,7 +32,7 @@ This package overrides the commands `makemigrations` and `migrate`, mainly to ma
 
 ## Requirements
 
-- Python 3.8, 3.9, 3.10
+- Python 3.9, 3.10, 3.11, 3.12
 
 ## Install
 
