@@ -24,7 +24,8 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Topic :: Software Development :: Libraries :: Python Modules",
   "Framework :: Django :: 4.2",
-  "Framework :: Django :: 5",
+  "Framework :: Django :: 5.0",
+  "Framework :: Django :: 5.1",
 ]
 packages = [
     { include = "django_sb_simple_migrations", from = "src" }
